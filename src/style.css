@@ -1,0 +1,58 @@
+/* Reset */
+*{box-sizing:border-box}
+*:before,*:after{box-sizing:inherit}
+body,h1,h2,h3,h4,p,ul,ol,li,dd,figure,figcaption,dl,dd,dt{margin:0px;padding:0px}
+body{-ms-overflow-style:-ms-autohiding-scrollbar;scroll-behavior:smooth;font-size:1rem;min-height:100vh}
+ul[class],ol[class]{list-style:none}
+a:not([class]){text-decoration:underline;text-decoration-skip-ink:auto;cursor:pointer}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder,select::-webkit-input-placeholder{line-height:normal}
+img{
+  height: auto;
+  max-width:100%;
+}
+@media(prefers-reduced-motion: reduce){
+  *{-webkit-animation:none !important;animation:none !important;transition:none !important;scroll-behavior:auto !important}
+}
+
+/* Variables */
+:root{
+  --size-200: 0.694rem;
+  --size-300: 0.833rem;
+  --size-400: 1rem;
+  --size-500: 1.2rem;
+  --size-600: 1.44rem;
+  --size-700: 1.728rem;
+  --size-800: 2.074rem;
+  --size-900: 2.488rem;
+  --size-1000: 2.986rem;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%; /* 16px */
+  line-height: 1.5;
+}
+main, header, footer {
+  padding: var(--size-400);
+  margin: 0 auto;
+  max-width: 750px;
+  width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--purple-70);
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.3;
+}
+h1 {font-size: clamp(var(--size-900), 5vw, 4rem)}
+h2, h2 code {font-size: var(--size-800);}
+h3, h3 code {font-size: var(--size-700);}
+h4 {font-size: var(--size-600);}
+h5 {font-size: var(--size-500);}
+small {font-size: var(--size-300);}
+.flow > * + * { margin-top: var(--flow-space, 1em);}
+p {
+  line-height: 1.7;}
+p.lead {  font-size: var(--size-500);}
