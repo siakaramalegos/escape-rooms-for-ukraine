@@ -1,0 +1,22 @@
+---
+layout: layout.njk
+---
+
+<h1>Contact Us</h1>
+
+<form name="contact" data-netlify="true" netlify-honeypot="honey">
+  <label for="name">Your name</label>
+  <input type="text" required name="name">
+
+  <label for="email">Your email address</label>
+  <input type="email" required name="email">
+
+  <label for="message">Your message</label>
+  <textarea name="message" id="" cols="30" rows="10" required></textarea>
+
+  <input type="text" hidden name="honey">
+
+  <p>
+    <button>Send Message</button>
+  </p>
+</form>

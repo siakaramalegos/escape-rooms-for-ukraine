@@ -20,12 +20,20 @@
     </script>
   </head>
   <body>
-    <header>nav</header>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <main class="flow">
       {{ content | safe }}
     </main>
-    <footer>
-      <p>footer</p>
+    <footer class="flow">
+      <h2>About</h2>
+      <p>This website was created as a project of <a href="https://er-go.org/">ERGO</a>, an escape room trade organization based in the United States, along with other escape room owners and enthusiasts arounnd the world. It was built pro bono by <a href="https://sia.codes">Sia Karamalegos</a>.</p>
     </footer>
   </body>
 </html>
